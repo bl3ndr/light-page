@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>light-page demo</title>
+
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <script type="module">
+      import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
+      import '@polymer/iron-demo-helpers/demo-snippet';
+    </script>
+
+    <script type="module" src="../light-page.js"></script>
+    <script type="module" src="../light-container.js"></script>
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic light-page demo</h3>
+      <demo-snippet>
+        <template>
+          <light-page>
+            <light-container>
+              <h2>Hello</h2>
+              <p>Some text</p>
+            </light-container>
+            <light-container>
+              <h1>Hello again</h1>
+              <p>some more text</p>
+            </light-container>
+          </light-page>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>
